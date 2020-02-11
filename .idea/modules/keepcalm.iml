@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$/../../keepcalm">
       <excludeFolder url="file://$MODULE_DIR$/../../keepcalm/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../keepcalm/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../keepcalm/out" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

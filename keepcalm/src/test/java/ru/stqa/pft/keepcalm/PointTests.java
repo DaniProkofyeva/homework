@@ -8,16 +8,12 @@ public class PointTests {
   @Test
   /* Проверка расстояния между точками*/
 
-  public void testArea1() {
-    Point p1 = new Point();
-    Point p2 = new Point();
+  public void testDistance1() {
 
-    p1.x1 = 13;
-    p2.x2 = -3;
-    p1.y1 = 4;
-    p2.y2 = 7;
+    Point p1 = new Point(13, 4);
+    Point p2 = new Point(-3, 7);
 
-    assert p1.distance(p1,p2) == 16.278820596099706;
+    assert p1.distance(p2) == 16.278820596099706;
 
   }
 
@@ -25,32 +21,25 @@ public class PointTests {
   @Test
   /* Проверка расстояния между точками с некорректным ожидаемым результатом*/
 
-  public void testArea2() {
-    Point p1 = new Point();
-    Point p2 = new Point();
+  public void testDistance2() {
 
-    p1.x1 = 13;
-    p2.x2 = -3;
-    p1.y1 = 4;
-    p2.y2 = 7;
+    Point p1 = new Point(13, 4);
+    Point p2 = new Point(-3, 7);
 
-    Assert.assertEquals(p1.distance(p1, p2), 17.278820596099706);
+
+    Assert.assertEquals(p1.distance(p2), 17.278820596099706);
 
   }
 
   @Test
   /* Проверка расстояния между точками*/
 
-  public void testArea3() {
-    Point p1 = new Point();
-    Point p2 = new Point();
+  public void testDistance3() {
 
-    p1.x1 = 2;
-    p2.x2 = 3;
-    p1.y1 = 4;
-    p2.y2 = 5;
+    Point p1 = new Point(3, 5);
+    Point p2 = new Point(4, 6);
 
-    Assert.assertEquals(p1.distance(p1, p2), 1.4142135623730951);
+    Assert.assertEquals(p1.distance(p2), 1.4142135623730951);
 
   }
 

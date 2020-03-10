@@ -5,19 +5,18 @@ import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.NewContactData;
 
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 
 public class NewContactCreationTests extends TestBase {
 
   @Test (enabled = false)
   public void testNewContactCreation() {
-    app.getNavigationHelper().gotoHomePage();
+    app.goTo().gotoHomePage();
     List<NewContactData> before = app.getContactHelper().getContactList();
-    app.getNavigationHelper().gotoNewContactPage();
+    app.goTo().gotoNewContactPage();
     NewContactData contact = new NewContactData("Prokofyeva", "81234567890", "daria@mail.com", "Daria", "test1");
     app.getContactHelper().createContact(contact,true);
-    app.getNavigationHelper().gotoHomePage();
+    app.goTo().gotoHomePage();
     List<NewContactData> after = app.getContactHelper().getContactList();
     Assert.assertEquals(after.size(), before.size() +1);
 

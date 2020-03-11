@@ -3,37 +3,45 @@ package ru.stqa.pft.addressbook.model;
 import java.util.Objects;
 
 public class NewContactData {
-  private int id;
-  private final String lastname;
-  private final String mobile;
-  private final String email;
-  private final String name;
+  private int id = Integer.MAX_VALUE;
+  private String lastname;
+  private String mobile;
+  private String email;
+  private String name;
   private String group;
-
-  public NewContactData(int id,String lastname, String mobile, String email, String name, String group) {
-    this.id = id;
-    this.lastname = lastname;
-    this.mobile = mobile;
-    this.email = email;
-    this.name = name;
-    this.group = group;
-  }
-
-  public NewContactData(String lastname, String mobile, String email, String name, String group) {
-    this.id = Integer.MAX_VALUE;
-    this.lastname = lastname;
-    this.mobile = mobile;
-    this.email = email;
-    this.name = name;
-    this.group = group;
-  }
 
   public int getId() {
     return id;
   }
 
-  public void setId(int id) {
+  public NewContactData withId(int id) {
     this.id = id;
+    return this;
+  }
+
+  public NewContactData withLastname(String lastname) {
+    this.lastname = lastname;
+    return this;
+  }
+
+  public NewContactData withMobile(String mobile) {
+    this.mobile = mobile;
+    return this;
+  }
+
+  public NewContactData withEmail(String email) {
+    this.email = email;
+    return this;
+  }
+
+  public NewContactData withName(String name) {
+    this.name = name;
+    return this;
+  }
+
+  public NewContactData withGroup(String group) {
+    this.group = group;
+    return this;
   }
 
   public String getLastname() {
@@ -61,13 +69,14 @@ public class NewContactData {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     NewContactData that = (NewContactData) o;
-    return Objects.equals(lastname, that.lastname) &&
+    return id == that.id &&
+            Objects.equals(lastname, that.lastname) &&
             Objects.equals(name, that.name);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(lastname, name);
+    return Objects.hash(id, lastname, name);
   }
 
   @Override

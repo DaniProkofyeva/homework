@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.GroupCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-03-16T20:05:34" hostname="WL357543" time="9.132">
+<testsuite name="ru.stqa.pft.addressbook.tests.GroupCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-03-16T20:56:19" hostname="WL357543" time="9.113">
   <properties/>
-  <testcase name="testGroupCreation[0](GroupData{id='0', name='test 0'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="3.793"/>
-  <testcase name="testGroupCreation[1](GroupData{id='0', name='test 1'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="2.571"/>
-  <testcase name="testGroupCreation[2](GroupData{id='0', name='test 2'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="2.765"/>
+  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="3.774"/>
+  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="2.707"/>
+  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="2.629"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Security framework of XStream not initialized, XStream is probably vulnerable.
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

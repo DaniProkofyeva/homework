@@ -3,9 +3,7 @@ package ru.stqa.pft.addressbook.tests;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.NewContactData;
-
 import java.io.File;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 

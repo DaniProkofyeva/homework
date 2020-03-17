@@ -13,20 +13,25 @@ public class NewContactData {
     @Expose
   private String lastname;
     @Expose
+    private String name;
+    @Expose
+    private String address;
+    @Expose
   private String mobile;
+    @Expose
   private String telHome;
+    @Expose
   private String telWork;
   private String allPhones;
     @Expose
   private String email;
+    @Expose
   private String email2;
+    @Expose
   private String email3;
   private String allEmails;
     @Expose
-  private String name;
   private String group;
-    @Expose
-  private String address;
   private File photo;
 
   public File getPhoto() {

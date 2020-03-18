@@ -49,17 +49,17 @@ public class NewContactDataGenerator {
     XStream xstream = new XStream();
     xstream.processAnnotations(NewContactData.class);
     String xml = xstream.toXML(contacts);
-    Writer writer = new FileWriter(file);
-    writer.write(xml);
-    writer.close();
+    try (Writer writer = new FileWriter(file)) {
+      writer.write(xml);
+    }
   }
   private void saveAsCsv(List<NewContactData> contacts, File file) throws IOException {
     System.out.println(new File(".").getAbsolutePath());
-    Writer writer = new FileWriter(file);
-    for (NewContactData contact : contacts) {
-      writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s\n", contact.getLastname(), contact.getName(), contact.getHome(), contact.getMobile(), contact.getWork(), contact.getAddress(),contact.getEmail(), contact.getEmail2(), contact.getEmail3(),contact.getGroup()));
+    try (Writer writer = new FileWriter(file)) {
+      for (NewContactData contact : contacts) {
+        writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s\n", contact.getLastname(), contact.getName(), contact.getHome(), contact.getMobile(), contact.getWork(), contact.getAddress(),contact.getEmail(), contact.getEmail2(), contact.getEmail3(),contact.getGroup()));
+      }
     }
-    writer.close();
   }
 
   private List<NewContactData> generateContacts(int count) {

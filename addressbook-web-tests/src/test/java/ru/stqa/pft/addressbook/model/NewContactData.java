@@ -5,41 +5,80 @@ import java.util.Objects;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 
-  @XStreamAlias("contact")
+import javax.persistence.*;
+
+@Entity
+@Table(name = "addressbook")
+@XStreamAlias("contact")
 public class NewContactData {
   @XStreamOmitField
+  @Id
+  @Column(name = "id")
   private int id = Integer.MAX_VALUE;
-    @Expose
+
+  @Expose
+  @Column(name = "lastname")
   private String lastname;
-    @Expose
+
+  @Expose
+  @Column(name = "firstname")
     private String name;
-    @Expose
-    private String address;
-    @Expose
+
+  @Expose
+  @Column(name = "address")
+  @Type(type = "text")
+  private String address;
+
+  @Expose
+  @Column(name = "mobile")
+  @Type(type = "text")
   private String mobile;
-    @Expose
+
+  @Expose
+  @Column(name = "home")
+  @Type(type = "text")
   private String telHome;
-    @Expose
+
+  @Expose
+  @Column(name = "work")
+  @Type(type = "text")
   private String telWork;
+
+  @Transient
   private String allPhones;
-    @Expose
+
+  @Expose
+  @Column(name = "email")
+  @Type(type = "text")
   private String email;
-    @Expose
+
+  @Expose
+  @Transient
   private String email2;
-    @Expose
+
+  @Expose
+  @Transient
   private String email3;
+
+  @Transient
   private String allEmails;
-    @Expose
+
+  @Expose
+  @Transient
   private String group;
-  private File photo;
+
+  @Column(name = "photo")
+  @Type(type = "text")
+  private String photo;
 
   public File getPhoto() {
-    return photo;
+    return new File (photo);
   }
 
   public NewContactData withPhoto(File photo) {
-    this.photo = photo;
+    this.photo = photo.getPath();
     return this;
   }
 

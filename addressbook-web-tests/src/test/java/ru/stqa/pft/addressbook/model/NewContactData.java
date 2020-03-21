@@ -9,9 +9,9 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 
+@XStreamAlias("contact")
 @Entity
 @Table(name = "addressbook")
-@XStreamAlias("contact")
 public class NewContactData {
   @XStreamOmitField
   @Id
@@ -55,11 +55,13 @@ public class NewContactData {
   private String email;
 
   @Expose
-  @Transient
+  @Column (name = "email2")
+  @Type(type = "text")
   private String email2;
 
   @Expose
-  @Transient
+  @Column (name = "email3")
+  @Type(type = "text")
   private String email3;
 
   @Transient
@@ -69,16 +71,16 @@ public class NewContactData {
   @Transient
   private String group;
 
-  @Column(name = "photo")
-  @Type(type = "text")
-  private String photo;
+  @Transient
+  private File photo;
 
   public File getPhoto() {
-    return new File (photo);
+    return photo;
   }
 
+
   public NewContactData withPhoto(File photo) {
-    this.photo = photo.getPath();
+    this.photo = photo;
     return this;
   }
 
@@ -201,21 +203,6 @@ public class NewContactData {
   }
 
   @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-    NewContactData that = (NewContactData) o;
-    return id == that.id &&
-            Objects.equals(lastname, that.lastname) &&
-            Objects.equals(name, that.name);
-  }
-
-  @Override
-  public int hashCode() {
-    return Objects.hash(id, lastname, name);
-  }
-
-  @Override
   public String toString() {
     return "NewContactData{" +
             "id='" + id + '\'' +
@@ -224,4 +211,21 @@ public class NewContactData {
             '}';
   }
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    NewContactData that = (NewContactData) o;
+    return id == that.id &&
+            Objects.equals(lastname, that.lastname) &&
+            Objects.equals(name, that.name) &&
+            Objects.equals(mobile, that.mobile) &&
+            Objects.equals(email, that.email) &&
+            Objects.equals(group, that.group);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(id, lastname, name, mobile, email, group);
+  }
 }

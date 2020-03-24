@@ -9,7 +9,8 @@
     <email>email 0</email>
     <email2>email2 0</email2>
     <email3>email3 0</email3>
-    <group>test 1</group>
+    <photo>src\test\resources\stru.png</photo>
+    <groups/>
   </contact>
   <contact>
     <lastname>lastname 1</lastname>
@@ -21,6 +22,7 @@
     <email>email 1</email>
     <email2>email2 1</email2>
     <email3>email3 1</email3>
-    <group>test 1</group>
+    <photo>src\test\resources\stru.png</photo>
+    <groups/>
   </contact>
 </list>

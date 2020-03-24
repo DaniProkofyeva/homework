@@ -1,10 +1,14 @@
 package ru.stqa.pft.addressbook.model;
 
 import java.io.File;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
+
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import net.bytebuddy.build.Plugin;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
@@ -67,16 +71,18 @@ public class NewContactData {
   @Transient
   private String allEmails;
 
-  @Expose
-  @Transient
-  private String group;
-
   @Transient
   private File photo;
+
 
   public File getPhoto() {
     return photo;
   }
+
+  @ManyToMany(fetch = FetchType.EAGER)
+  @JoinTable(name = "address_in_groups",
+          joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+  private Set<GroupData> groups = new HashSet<GroupData>();
 
 
   public NewContactData withPhoto(File photo) {
@@ -134,11 +140,6 @@ public class NewContactData {
     return this;
   }
 
-  public NewContactData withGroup(String group) {
-    this.group = group;
-    return this;
-  }
-
   public NewContactData withAllEmails(String allEmails) {
     this.allEmails = allEmails;
     return this;
@@ -148,7 +149,6 @@ public class NewContactData {
     this.address = address;
     return this;
   }
-
 
   public int getId() {
     return id;
@@ -178,8 +178,8 @@ public class NewContactData {
     return name;
   }
 
-  public String getGroup() {
-    return group;
+  public Groups getGroups() {
+    return new Groups(groups);
   }
 
   public String getAllPhones() {
@@ -202,6 +202,11 @@ public class NewContactData {
     return email3;
   }
 
+  public NewContactData inGroup(GroupData group) {
+    groups.add(group);
+    return this;
+  }
+
   @Override
   public String toString() {
     return "NewContactData{" +
@@ -219,13 +224,17 @@ public class NewContactData {
     return id == that.id &&
             Objects.equals(lastname, that.lastname) &&
             Objects.equals(name, that.name) &&
+            Objects.equals(address, that.address) &&
             Objects.equals(mobile, that.mobile) &&
+            Objects.equals(telHome, that.telHome) &&
+            Objects.equals(telWork, that.telWork) &&
             Objects.equals(email, that.email) &&
-            Objects.equals(group, that.group);
+            Objects.equals(email2, that.email2) &&
+            Objects.equals(email3, that.email3);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, lastname, name, mobile, email, group);
+    return Objects.hash(id, lastname, name, address, mobile, telHome, telWork, email, email2, email3);
   }
 }

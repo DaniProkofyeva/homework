@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.NewContactData;
+import ru.stqa.pft.addressbook.tests.NewContactCreationTests;
+
 import java.util.List;
 
 public class ContactHelper extends HelperBase{
@@ -35,16 +37,20 @@ public class ContactHelper extends HelperBase{
     type(By.name("address"), newContactData.getAddress());
 
     if (creation) {
-      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(newContactData.getGroup());
-    } else {
-      Assert.assertFalse(isElementPresent(By.name("new_group")));
+      if (newContactData.getGroups().size() > 0) {
+        Assert.assertTrue(newContactData.getGroups().size() == 1);
+        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(newContactData.getGroups().iterator().next().getName());
+      }
+    }else {
+        Assert.assertFalse(isElementPresent(By.name("new_group")));
+      }
     }
-  }
 
 
   public void selectContactbyId(int id)  {
     wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
   }
+
 
   public void deleteSelectedContact() {click(By.xpath("//input[@value='Delete']")); }
 
@@ -55,6 +61,31 @@ public class ContactHelper extends HelperBase{
 
   public void initContactModificationById(int id) {
     wd.findElement(By.xpath("//tr[.//*[@id='" + id + "']]//*[@title='Edit']")).click();
+  }
+
+  public void clickOnGroup() {
+    wd.findElement(By.name("group")).click();
+  }
+
+  public void selectGroup(NewContactData newContactData, boolean selection) {
+    if (selection) {
+      if (newContactData.getGroups().size() > 0) {
+        Assert.assertTrue(newContactData.getGroups().size() == 1);
+        new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(newContactData.getGroups().iterator().next().getName());
+      }
+    }
+  }
+
+  public void addToGroup() {
+    wd.findElement(By.name("add")).click();
+  }
+
+  public void addContactToGroup(NewContactData contact) {
+    selectContactbyId(contact.getId());
+    clickOnGroup();
+    selectGroup(contact, true);
+    addToGroup();
+    returnToHomePage();
   }
 
   public void submitContactModification() {
@@ -109,7 +140,7 @@ public class ContactHelper extends HelperBase{
       String Address = cells.get(3).getText();
       String allEmails = cells.get(4).getText();
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      contactCache.add(new NewContactData().withId(id).withLastname(lastname).withEmail(null).withName(name).withGroup(null)
+      contactCache.add(new NewContactData().withId(id).withLastname(lastname).withEmail(null).withName(name)
               .withAllPhones(allPhones).withAddress(Address).withAllEmails(allEmails));
     }
     return new Contacts(contactCache);

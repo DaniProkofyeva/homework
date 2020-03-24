@@ -1,15 +1,15 @@
 package ru.stqa.pft.addressbook.model;
 
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
+
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import com.google.gson.annotations.Expose;
 import org.hibernate.annotations.Type;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
 @XStreamAlias("group")
@@ -34,6 +34,13 @@ public class GroupData {
   @Column(name = "group_footer")
   @Type(type = "text")
   private String footer;
+
+  @ManyToMany(mappedBy = "groups")
+  private Set<NewContactData> contacts = new HashSet<NewContactData>();
+
+  public Contacts getContacts() {
+    return new Contacts(contacts);
+  }
 
   public int getId() {
     return id;

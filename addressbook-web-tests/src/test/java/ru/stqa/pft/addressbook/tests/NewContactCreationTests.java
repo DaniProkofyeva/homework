@@ -2,6 +2,8 @@ package ru.stqa.pft.addressbook.tests;
 
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 import ru.stqa.pft.addressbook.model.NewContactData;
 import java.io.File;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -16,6 +18,17 @@ import java.io.IOException;
 import java.util.stream.Collectors;
 
 public class NewContactCreationTests extends TestBase {
+
+  /*
+  @BeforeMethod
+  public void preconditions() {
+    if (app.db().groups().size() == 0){
+      app.goTo().groupPage();
+      app.group().create(new GroupData().withName("test1").withHeader("test2").withFooter("test3"));
+    }
+  }
+
+   */
 
 
   @DataProvider
@@ -34,25 +47,50 @@ public class NewContactCreationTests extends TestBase {
     }
   }
 
+  /*
+  @Test
+  public void testContactsCreation() {
+    Groups groups = app.db().groups();
+    File photo = new File("src/test/resources/stru.png");
+    NewContactData newContact = new NewContactData().withLastname("Prokofyeva")
+            .withMobile("81234567890").withEmail("daria@mail.com").withName("Daria")
+            .withPhoto(photo).inGroup(groups.iterator().next());
+    app.goTo().homePage();
+    Contacts before = app.db().contacts();
+    app.goTo().contactPage();
+    app.contact().create(newContact,true);
+  }
+
+   */
+
+  @BeforeMethod
+  public void ensurePreconditions () {
+    if (app.db().contacts().size() == 0) {
+      app.goTo().contactPage();
+      app.contact().create(new NewContactData().withLastname("Prokofyeva").withMobile("81234567890").withEmail("daria@mail.com").withName("Daria"),true);
+    }
+  }
+
   @Test(dataProvider = "validContactsFromXml")
   public void testNewContactCreation(NewContactData contact) {
     app.goTo().homePage();
     Contacts before = app.db().contacts();
     app.goTo().contactPage();
     app.contact().create(contact,true);
-    app.goTo().homePage();
     assertThat(app.contact().count(), equalTo(before.size() + 1));
     Contacts after = app.db().contacts();
     assertThat(after, equalTo(
             before.withAdded(contact.withId(after.stream().mapToInt((c) ->c.getId()).max().getAsInt()))));
+    verifyContactsListUI();
   }
 
   @Test (enabled = false)
   public void testBadNewContactCreation() {
+    Groups groups = app.db().groups();
     app.goTo().homePage();
     Contacts before = app.db().contacts();
     app.goTo().contactPage();
-    NewContactData contact = new NewContactData().withLastname("Prokofyeva'").withMobile("81234567890").withEmail("daria@mail.com").withName("Daria").withGroup("test1");
+    NewContactData contact = new NewContactData().withLastname("Prokofyeva'").withMobile("81234567890").withEmail("daria@mail.com").withName("Daria");
     app.contact().create(contact,true);
     app.goTo().homePage();
     assertThat(app.contact().count(), equalTo(before.size()));

@@ -5,10 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import ru.stqa.pft.addressbook.model.Contacts;
-import ru.stqa.pft.addressbook.model.GroupData;
-import ru.stqa.pft.addressbook.model.Groups;
-import ru.stqa.pft.addressbook.model.NewContactData;
+import ru.stqa.pft.addressbook.model.*;
 
 import java.util.List;
 
@@ -21,8 +18,9 @@ public class DbHelper {
     final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
             .configure() // configures settings from hibernate.cfg.xml
             .build();
-      sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
+    sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
   }
+
   public Groups groups() {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
@@ -31,6 +29,7 @@ public class DbHelper {
     session.close();
     return new Groups(result);
   }
+
   public Contacts contacts() {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
@@ -38,5 +37,14 @@ public class DbHelper {
     session.getTransaction().commit();
     session.close();
     return new Contacts(result);
+  }
+
+  public ContactsInGroup groupsWithContact() {
+    Session session = sessionFactory.openSession();
+    session.beginTransaction();
+    List<ContactsInGroupData> result = session.createQuery("from ContactsInGroupData").list();
+    session.getTransaction().commit();
+    session.close();
+    return new ContactsInGroup(result);
   }
 }

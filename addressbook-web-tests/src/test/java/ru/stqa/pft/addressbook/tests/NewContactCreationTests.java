@@ -19,7 +19,6 @@ import java.util.stream.Collectors;
 
 public class NewContactCreationTests extends TestBase {
 
-  /*
   @BeforeMethod
   public void preconditions() {
     if (app.db().groups().size() == 0){
@@ -28,7 +27,6 @@ public class NewContactCreationTests extends TestBase {
     }
   }
 
-   */
 
 
   @DataProvider
@@ -47,7 +45,6 @@ public class NewContactCreationTests extends TestBase {
     }
   }
 
-  /*
   @Test
   public void testContactsCreation() {
     Groups groups = app.db().groups();
@@ -61,8 +58,8 @@ public class NewContactCreationTests extends TestBase {
     app.contact().create(newContact,true);
   }
 
-   */
 
+   /*
   @BeforeMethod
   public void ensurePreconditions () {
     if (app.db().contacts().size() == 0) {
@@ -83,6 +80,8 @@ public class NewContactCreationTests extends TestBase {
             before.withAdded(contact.withId(after.stream().mapToInt((c) ->c.getId()).max().getAsInt()))));
     verifyContactsListUI();
   }
+
+   */
 
   @Test (enabled = false)
   public void testBadNewContactCreation() {

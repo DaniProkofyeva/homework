@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.NewContactData;
 import ru.stqa.pft.addressbook.tests.NewContactCreationTests;
 
@@ -80,7 +81,7 @@ public class ContactHelper extends HelperBase{
     wd.findElement(By.name("add")).click();
   }
 
-  public void addContactToGroup(NewContactData contact) {
+  public void addContactToGroup(NewContactData contact, GroupData group) {
     selectContactbyId(contact.getId());
     clickOnGroup();
     selectGroup(contact, true);

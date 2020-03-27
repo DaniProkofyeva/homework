@@ -19,16 +19,6 @@ import java.util.stream.Collectors;
 
 public class NewContactCreationTests extends TestBase {
 
-  @BeforeMethod
-  public void preconditions() {
-    if (app.db().groups().size() == 0){
-      app.goTo().groupPage();
-      app.group().create(new GroupData().withName("test1").withHeader("test2").withFooter("test3"));
-    }
-  }
-
-
-
   @DataProvider
   public Iterator<Object[]> validContactsFromXml() throws IOException {
     try (BufferedReader reader = new BufferedReader(new FileReader("src/test/resources/contacts.xml"))) {
@@ -45,21 +35,38 @@ public class NewContactCreationTests extends TestBase {
     }
   }
 
+    /*
+  @BeforeMethod
+  public void preconditions() {
+    if (app.db().groups().size() == 0){
+      app.goTo().groupPage();
+      app.group().create(new GroupData().withName("test1").withHeader("test2").withFooter("test3"));
+    }
+  }
+   */
+
+  /*
   @Test
   public void testContactsCreation() {
     Groups groups = app.db().groups();
+    Contacts before = app.db().contacts();
     File photo = new File("src/test/resources/stru.png");
-    NewContactData newContact = new NewContactData().withLastname("Prokofyeva")
+    NewContactData contact = new NewContactData().withLastname("Prokofyeva")
             .withMobile("81234567890").withEmail("daria@mail.com").withName("Daria")
             .withPhoto(photo).inGroup(groups.iterator().next());
     app.goTo().homePage();
-    Contacts before = app.db().contacts();
     app.goTo().contactPage();
-    app.contact().create(newContact,true);
+    app.contact().create(contact,true);
+    Contacts after = app.db().contacts();
+    assertThat(app.contact().count(), equalTo(before.size() + 1));
+    assertThat(after, equalTo(
+            before.withAdded(contact.withId(after.stream().mapToInt((c) ->c.getId()).max().getAsInt()))));
   }
 
 
-   /*
+   */
+
+
   @BeforeMethod
   public void ensurePreconditions () {
     if (app.db().contacts().size() == 0) {
@@ -70,6 +77,7 @@ public class NewContactCreationTests extends TestBase {
 
   @Test(dataProvider = "validContactsFromXml")
   public void testNewContactCreation(NewContactData contact) {
+    Groups groups = app.db().groups();
     app.goTo().homePage();
     Contacts before = app.db().contacts();
     app.goTo().contactPage();
@@ -81,7 +89,7 @@ public class NewContactCreationTests extends TestBase {
     verifyContactsListUI();
   }
 
-   */
+
 
   @Test (enabled = false)
   public void testBadNewContactCreation() {

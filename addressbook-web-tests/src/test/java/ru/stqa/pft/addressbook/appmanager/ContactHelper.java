@@ -5,9 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import ru.stqa.pft.addressbook.model.Contacts;
-import ru.stqa.pft.addressbook.model.GroupData;
-import ru.stqa.pft.addressbook.model.NewContactData;
+import ru.stqa.pft.addressbook.model.*;
 import ru.stqa.pft.addressbook.tests.NewContactCreationTests;
 
 import java.util.List;
@@ -87,6 +85,33 @@ public class ContactHelper extends HelperBase{
     selectGroup(contact, true);
     addToGroup();
     returnToHomePage();
+  }
+
+  private void submitRemoveContactFromGroup() {
+    click(By.name("remove"));
+  }
+
+  private void selectContact() {
+    click(By.name("selected[]"));
+  }
+
+  public void removeFromGroup(Groups list, ContactsInGroupData toDelete) {
+    selectGroup(list, toDelete);
+    selectContact();
+    submitRemoveContactFromGroup();
+    returnToHomePage();
+  }
+
+  private void selectGroup(Groups list, ContactsInGroupData toDelete) {
+    String groupToSelect = null;
+
+    for (GroupData s : list) {
+      if (s.getId() == toDelete.getGroupId()) {
+        groupToSelect = s.getName();
+        break;
+      }
+    }
+    new Select(wd.findElement(By.name("group"))).selectByVisibleText(groupToSelect);
   }
 
   public void submitContactModification() {

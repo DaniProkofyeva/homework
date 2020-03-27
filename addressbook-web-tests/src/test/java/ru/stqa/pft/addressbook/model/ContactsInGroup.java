@@ -23,7 +23,7 @@ public class ContactsInGroup extends ForwardingSet<ContactsInGroupData> {
     return groups;
   }
 
-  public ContactsInGroup without(ContactsInGroupData group) {
+  public ContactsInGroup withoutAdded(ContactsInGroupData group) {
     ContactsInGroup groups = new ContactsInGroup(this);
     groups.remove(group);
     return groups;

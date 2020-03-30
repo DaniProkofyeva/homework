@@ -3,7 +3,6 @@ package ru.stqa.pft.addressbook.model;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import com.google.gson.annotations.Expose;

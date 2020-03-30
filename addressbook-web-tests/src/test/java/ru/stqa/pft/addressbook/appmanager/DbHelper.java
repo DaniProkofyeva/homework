@@ -38,13 +38,4 @@ public class DbHelper {
     session.close();
     return new Contacts(result);
   }
-
-  public ContactsInGroup groupsWithContact() {
-    Session session = sessionFactory.openSession();
-    session.beginTransaction();
-    List<ContactsInGroupData> result = session.createQuery("from ContactsInGroupData").list();
-    session.getTransaction().commit();
-    session.close();
-    return new ContactsInGroup(result);
-  }
 }

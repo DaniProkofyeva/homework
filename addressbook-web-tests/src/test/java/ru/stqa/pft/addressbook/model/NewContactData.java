@@ -150,6 +150,11 @@ public class NewContactData {
     return this;
   }
 
+  public NewContactData removeOfGroup(GroupData group) {
+    groups.remove(group);
+    return this;
+  }
+
   public int getId() {
     return id;
   }

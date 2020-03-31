@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.*;
 import java.util.Set;
 import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.hasItem;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 
@@ -41,19 +42,14 @@ public class AddContactToGroupTests extends TestBase {
           }
         }
       }
-      contact = app.db().contacts().iterator().next();
-      app.group().create(new GroupData().withName("test 1"));
-      app.goTo().groupPage();
     }
   }
 
   @Test
   public void testAddContactToGroup() {
-    Contacts before = app.db().contacts();
     NewContactData contactWithAddedGroup = contact.inGroup(group);
     app.goTo().homePage();
     app.contact().addInSelectGroup(contact.getId(), group.getName());
-    Contacts after = app.db().contacts();
-    assertThat(after, equalTo(before.without(contact).withAdded(contactWithAddedGroup)));
+    assertThat(contact.getGroups(), equalTo(contactWithAddedGroup.getGroups().withAdded(group)));
   }
 }

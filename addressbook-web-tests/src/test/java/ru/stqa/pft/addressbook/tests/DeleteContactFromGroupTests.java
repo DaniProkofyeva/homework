@@ -38,21 +38,15 @@ public class DeleteContactFromGroupTests extends TestBase {
           return;
         }
       }
-      contact = app.db().contacts().iterator().next();
-      group = app.db().groups().iterator().next();
-      app.goTo().homePage();
-      app.contact().addInSelectGroup(contact.getId(), group.getName());
     }
   }
 
   @Test
   public void testDeleteContactFromGroup() {
-    Contacts before = app.db().contacts();
     NewContactData contactWithoutGroup = contact.removeOfGroup(group);
     app.goTo().homePage();
     app.contact().deleteFromSelectedGroup(contact.getId(), group.getName());
-    Contacts after = app.db().contacts();
-    assertThat(after, equalTo(before.without(contact).withAdded(contactWithoutGroup)));
+    assertThat(contact.getGroups(), equalTo(contactWithoutGroup.getGroups().without(group)));
   }
 }
 

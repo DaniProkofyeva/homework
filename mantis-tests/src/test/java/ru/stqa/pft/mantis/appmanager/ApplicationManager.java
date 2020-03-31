@@ -15,10 +15,17 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
   private final Properties properties;
   private WebDriver wd;
+  private FtpHelper ftp;
 
   private String browser;
   private RegistrationHelper registrationHelper;
 
+  public FtpHelper ftp() {
+    if (ftp == null){
+      ftp = new FtpHelper(this);
+    }
+    return ftp;
+  }
 
   public ApplicationManager(String browser){
     this.browser = browser;

@@ -1,108 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.mantis.tests.RegistrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-02T19:57:29" hostname="WL357543" time="14.858">
+<testsuite name="ru.stqa.pft.mantis.tests.RegistrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-02T20:46:58" hostname="WL357543" time="33.421">
   <properties/>
-  <testcase name="testRegistration" classname="ru.stqa.pft.mantis.tests.RegistrationTests" time="14.858"/>
-  <system-out><![CDATA[22:57:29.306 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: AUTH
-22:57:29.308 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: DATA
-22:57:29.308 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: EHLO
-22:57:29.308 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: HELO
-22:57:29.308 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: HELP
-22:57:29.308 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: MAIL
-22:57:29.308 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: NOOP
-22:57:29.308 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: QUIT
-22:57:29.308 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: RCPT
-22:57:29.308 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: RSET
-22:57:29.308 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: STARTTLS
-22:57:29.308 [Test worker] DEBUG org.subethamail.smtp.server.CommandHandler - Added command: VRFY
-22:57:29.308 [Test worker] INFO org.subethamail.smtp.server.SMTPServer - SMTP server *:25 starting
-22:57:29.323 [org.subethamail.smtp.server.ServerThread *:25] INFO org.subethamail.smtp.server.ServerThread - SMTP server *:25 started
-22:57:30.833 [Test worker] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
-22:57:30.855 [Test worker] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
-22:57:30.855 [Test worker] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
-22:57:30.928 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
-22:57:30.933 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
-22:57:30.933 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
-22:57:30.936 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-22:57:30.939 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-22:57:30.941 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
-22:57:30.943 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
-22:57:30.944 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
-22:57:30.945 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-22:57:30.945 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
-22:57:30.945 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
-22:57:30.946 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\xxprokod\AppData\Local\Temp (java.io.tmpdir)
-22:57:30.947 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-22:57:30.949 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 477626368 bytes
-22:57:30.950 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-22:57:30.952 [Test worker] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
-22:57:30.952 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
-22:57:30.953 [Test worker] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@21149cba
-22:57:30.989 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-22:57:31.766 [Test worker] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
-22:57:31.766 [Test worker] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
-22:57:31.797 [Test worker] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-22:57:31.797 [Test worker] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-22:57:31.813 [Test worker] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
-22:57:31.836 [Test worker] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
-22:57:31.836 [Test worker] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-22:57:31.887 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 4
-22:57:31.887 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 4
-22:57:31.892 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
-22:57:31.892 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
-22:57:31.892 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
-22:57:31.892 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
-22:57:31.892 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
-22:57:31.892 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
-22:57:31.892 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-22:57:31.892 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
-22:57:31.892 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-22:57:31.892 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
-22:57:31.892 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-22:57:31.905 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
-22:57:31.905 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
-22:57:31.905 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-22:57:32.841 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 5968 (auto-detected)
-22:57:32.844 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
-22:57:32.844 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
-22:57:33.067 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-22:57:33.068 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-22:57:33.313 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 30:24:32:ff:fe:61:f0:3a (auto-detected)
-22:57:33.385 [AsyncHttpClient-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
-22:57:33.385 [AsyncHttpClient-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
-22:57:33.385 [AsyncHttpClient-3-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@41d06bf
-22:57:33.403 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to '/session'
-22:57:33.423 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
-22:57:33.424 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
-22:57:33.424 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
-22:57:33.424 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
-22:57:37.861 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+  <testcase name="testRegistration" classname="ru.stqa.pft.mantis.tests.RegistrationTests" time="33.421"/>
+  <system-out><![CDATA[JAMES Remote Administration Tool 2.3.1
+Please enter your login and password
+Login id:
+
+Password:
+
+Login failed for 
+Login id:root
+
+Password:root
+
+Welcome root. HELP for a list of commandsadduser user1585860418506 password
+
+User user1585860418506 addedquit
+23:46:58.823 [Test worker] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+23:46:58.836 [Test worker] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+23:46:58.836 [Test worker] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+23:46:58.875 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+23:46:58.879 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+23:46:58.879 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+23:46:58.883 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+23:46:58.886 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+23:46:58.887 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+23:46:58.888 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+23:46:58.889 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+23:46:58.890 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+23:46:58.890 [Test worker] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+23:46:58.890 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+23:46:58.892 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\xxprokod\AppData\Local\Temp (java.io.tmpdir)
+23:46:58.893 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+23:46:58.896 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 477626368 bytes
+23:46:58.897 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+23:46:58.899 [Test worker] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+23:46:58.899 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+23:46:58.899 [Test worker] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@26a51541
+23:46:58.922 [Test worker] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+23:46:59.525 [Test worker] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+23:46:59.525 [Test worker] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA]
+23:46:59.560 [Test worker] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+23:46:59.560 [Test worker] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+23:46:59.572 [Test worker] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+23:46:59.590 [Test worker] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+23:46:59.590 [Test worker] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 4
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 4
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+23:46:59.639 [Test worker] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+23:46:59.653 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+23:46:59.653 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+23:46:59.653 [Test worker] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+23:47:00.656 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 4116 (auto-detected)
+23:47:00.659 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+23:47:00.659 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+23:47:00.874 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+23:47:00.875 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+23:47:01.111 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 30:24:32:ff:fe:61:f0:3a (auto-detected)
+23:47:01.199 [AsyncHttpClient-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+23:47:01.199 [AsyncHttpClient-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+23:47:01.199 [AsyncHttpClient-3-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@735f8ea3
+23:47:01.215 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to '/session'
+23:47:01.237 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+23:47:01.237 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+23:47:01.237 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+23:47:01.238 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+23:47:05.180 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
 POST /session HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 427
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
 HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
-content-length: 731
-date: Thu, 02 Apr 2020 19:57:33 GMT
+content-length: 730
+date: Thu, 02 Apr 2020 20:47:01 GMT
 
-22:57:37.874 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:37.981 [Forwarding setTimeout on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/timeouts'
-22:57:37.981 [Forwarding setTimeout on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/timeouts'
-22:57:37.999 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:05.194 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:05.269 [Forwarding setTimeout on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/timeouts'
+23:47:05.269 [Forwarding setTimeout on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/timeouts'
+23:47:05.294 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/timeouts HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/timeouts HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 22
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -110,19 +110,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:37 GMT
+date: Thu, 02 Apr 2020 20:47:05 GMT
 
-22:57:37.999 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:38.017 [Forwarding get on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/url'
-22:57:38.018 [Forwarding get on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/url'
-22:57:39.595 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:05.295 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:05.311 [Forwarding get on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/url'
+23:47:05.312 [Forwarding get on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/url'
+23:47:06.332 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/url HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/url HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 68
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -130,19 +130,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:38 GMT
+date: Thu, 02 Apr 2020 20:47:05 GMT
 
-22:57:39.597 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:39.602 [Forwarding get on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/url'
-22:57:39.603 [Forwarding get on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/url'
-22:57:40.226 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:06.333 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:06.343 [Forwarding get on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/url'
+23:47:06.344 [Forwarding get on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/url'
+23:47:06.840 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/url HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/url HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 89
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -150,19 +150,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:39 GMT
+date: Thu, 02 Apr 2020 20:47:06 GMT
 
-22:57:40.229 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.240 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.240 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.280 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:06.842 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:06.850 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:06.850 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:06.857 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 62
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -170,19 +170,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:06 GMT
 
-22:57:40.281 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.293 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/6c5249cc-0293-45bb-8721-ad62cb4cfe74/click'
-22:57:40.294 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/6c5249cc-0293-45bb-8721-ad62cb4cfe74/click'
-22:57:40.525 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:06.859 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:06.878 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/84c408f4-52fe-4e28-8ecb-17a4c3c4ceb4/click'
+23:47:06.879 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/84c408f4-52fe-4e28-8ecb-17a4c3c4ceb4/click'
+23:47:07.104 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/6c5249cc-0293-45bb-8721-ad62cb4cfe74/click HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/84c408f4-52fe-4e28-8ecb-17a4c3c4ceb4/click HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 50
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -190,19 +190,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:06 GMT
 
-22:57:40.525 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.529 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.529 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.534 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.105 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.107 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.107 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.111 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 62
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -210,19 +210,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.534 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.561 [Forwarding getElementAttribute on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync'
-22:57:40.561 [Forwarding getElementAttribute on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync'
-22:57:40.579 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.112 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.142 [Forwarding getElementAttribute on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync'
+23:47:07.142 [Forwarding getElementAttribute on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync'
+23:47:07.165 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 39635
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -230,19 +230,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 12
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.580 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.582 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.582 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.587 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.166 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.168 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.168 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.172 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 62
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -250,19 +250,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.587 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.589 [Forwarding clearElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/6c5249cc-0293-45bb-8721-ad62cb4cfe74/clear'
-22:57:40.590 [Forwarding clearElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/6c5249cc-0293-45bb-8721-ad62cb4cfe74/clear'
-22:57:40.600 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.173 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.176 [Forwarding clearElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/84c408f4-52fe-4e28-8ecb-17a4c3c4ceb4/clear'
+23:47:07.176 [Forwarding clearElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/84c408f4-52fe-4e28-8ecb-17a4c3c4ceb4/clear'
+23:47:07.183 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/6c5249cc-0293-45bb-8721-ad62cb4cfe74/clear HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/84c408f4-52fe-4e28-8ecb-17a4c3c4ceb4/clear HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 50
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -270,19 +270,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.600 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.604 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.604 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.611 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.183 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.185 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.186 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.193 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 62
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -290,19 +290,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.612 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.621 [Forwarding sendKeysToElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/6c5249cc-0293-45bb-8721-ad62cb4cfe74/value'
-22:57:40.621 [Forwarding sendKeysToElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/6c5249cc-0293-45bb-8721-ad62cb4cfe74/value'
-22:57:40.666 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.194 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.202 [Forwarding sendKeysToElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/84c408f4-52fe-4e28-8ecb-17a4c3c4ceb4/value'
+23:47:07.202 [Forwarding sendKeysToElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/84c408f4-52fe-4e28-8ecb-17a4c3c4ceb4/value'
+23:47:07.238 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/6c5249cc-0293-45bb-8721-ad62cb4cfe74/value HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/84c408f4-52fe-4e28-8ecb-17a4c3c4ceb4/value HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 251
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -310,19 +310,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.666 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.671 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.671 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.681 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.238 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.242 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.242 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.248 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 59
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -330,19 +330,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.681 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.684 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/5fe2305f-e502-4268-8718-149a047f7e33/click'
-22:57:40.684 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/5fe2305f-e502-4268-8718-149a047f7e33/click'
-22:57:40.916 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.248 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.251 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04de3326-60b7-4e3e-8484-de59ff2c69a8/click'
+23:47:07.252 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04de3326-60b7-4e3e-8484-de59ff2c69a8/click'
+23:47:07.476 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/5fe2305f-e502-4268-8718-149a047f7e33/click HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/04de3326-60b7-4e3e-8484-de59ff2c69a8/click HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 50
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -350,19 +350,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.917 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.918 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.918 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.923 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.476 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.480 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.480 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.489 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 59
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -370,19 +370,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.923 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.932 [Forwarding getElementAttribute on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync'
-22:57:40.932 [Forwarding getElementAttribute on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync'
-22:57:40.946 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.490 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.502 [Forwarding getElementAttribute on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync'
+23:47:07.502 [Forwarding getElementAttribute on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync'
+23:47:07.523 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 39635
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -390,19 +390,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 12
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.947 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.948 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.948 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.953 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.524 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.525 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.526 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.531 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 59
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -410,19 +410,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.954 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.955 [Forwarding clearElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/5fe2305f-e502-4268-8718-149a047f7e33/clear'
-22:57:40.956 [Forwarding clearElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/5fe2305f-e502-4268-8718-149a047f7e33/clear'
-22:57:40.963 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.531 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.533 [Forwarding clearElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04de3326-60b7-4e3e-8484-de59ff2c69a8/clear'
+23:47:07.533 [Forwarding clearElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04de3326-60b7-4e3e-8484-de59ff2c69a8/clear'
+23:47:07.537 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/5fe2305f-e502-4268-8718-149a047f7e33/clear HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/04de3326-60b7-4e3e-8484-de59ff2c69a8/clear HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 50
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -430,19 +430,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.963 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.965 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.965 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:40.969 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.538 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.539 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.539 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.543 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 59
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -450,19 +450,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:40.969 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:40.972 [Forwarding sendKeysToElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/5fe2305f-e502-4268-8718-149a047f7e33/value'
-22:57:40.972 [Forwarding sendKeysToElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/5fe2305f-e502-4268-8718-149a047f7e33/value'
-22:57:41.009 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.543 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.546 [Forwarding sendKeysToElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04de3326-60b7-4e3e-8484-de59ff2c69a8/value'
+23:47:07.546 [Forwarding sendKeysToElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04de3326-60b7-4e3e-8484-de59ff2c69a8/value'
+23:47:07.576 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/5fe2305f-e502-4268-8718-149a047f7e33/value HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/04de3326-60b7-4e3e-8484-de59ff2c69a8/value HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 351
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -470,19 +470,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:40 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:41.010 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:41.013 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:41.013 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:41.017 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.576 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.578 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.578 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:07.582 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 64
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -490,51 +490,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:41 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:41.018 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:41.020 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/2ba931c6-0a0e-486c-ba08-c89b6be140bb/click'
-22:57:41.021 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/2ba931c6-0a0e-486c-ba08-c89b6be140bb/click'
-22:57:41.258 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - SMTP connection from 127.0.0.1/127.0.0.1, new connection count: 1
-22:57:41.258 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Server: 220 WL357543.ap.tieto.com ESMTP SubEthaSMTP 3.1.7
-22:57:41.259 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Client: HELO WL357543.ap.tieto.com
-22:57:41.260 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Server: 250 WL357543.ap.tieto.com
-22:57:41.261 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Client: MAIL FROM:<admin@example.com>
-22:57:41.270 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Server: 250 Ok
-22:57:41.270 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Client: RCPT TO:<user1585857449325@localhost>
-22:57:41.270 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.wiser.Wiser - Accepting mail from admin@example.com to user1585857449325@localhost
-22:57:41.271 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Server: 250 Ok
-22:57:41.271 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Client: DATA
-22:57:41.271 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Server: 354 End data with <CR><LF>.<CR><LF>
-22:57:41.277 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.wiser.Wiser - Delivering mail from admin@example.com to user1585857449325@localhost
-22:57:41.279 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.wiser.Wiser - Creating message from data with 2762 bytes
-22:57:41.280 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Server: 250 Ok
-22:57:41.280 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Client: QUIT
-22:57:41.280 [org.subethamail.smtp.server.Session-/127.0.0.1:63820] DEBUG org.subethamail.smtp.server.Session - Server: 221 Bye
-22:57:41.285 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - SMTP connection from 127.0.0.1/127.0.0.1, new connection count: 1
-22:57:41.285 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Server: 220 WL357543.ap.tieto.com ESMTP SubEthaSMTP 3.1.7
-22:57:41.285 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Client: HELO WL357543.ap.tieto.com
-22:57:41.285 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Server: 250 WL357543.ap.tieto.com
-22:57:41.286 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Client: MAIL FROM:<admin@example.com>
-22:57:41.286 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Server: 250 Ok
-22:57:41.286 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Client: RCPT TO:<root@localhost>
-22:57:41.286 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.wiser.Wiser - Accepting mail from admin@example.com to root@localhost
-22:57:41.286 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Server: 250 Ok
-22:57:41.286 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Client: DATA
-22:57:41.286 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Server: 354 End data with <CR><LF>.<CR><LF>
-22:57:41.287 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.wiser.Wiser - Delivering mail from admin@example.com to root@localhost
-22:57:41.287 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.wiser.Wiser - Creating message from data with 869 bytes
-22:57:41.287 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Server: 250 Ok
-22:57:41.287 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Client: QUIT
-22:57:41.287 [org.subethamail.smtp.server.Session-/127.0.0.1:63821] DEBUG org.subethamail.smtp.server.Session - Server: 221 Bye
-22:57:41.591 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:07.583 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:07.588 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/33eb6244-54c8-4be3-a9d4-20b88f182f22/click'
+23:47:07.588 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/33eb6244-54c8-4be3-a9d4-20b88f182f22/click'
+23:47:08.524 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/2ba931c6-0a0e-486c-ba08-c89b6be140bb/click HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/33eb6244-54c8-4be3-a9d4-20b88f182f22/click HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 50
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -542,20 +510,38 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:41 GMT
+date: Thu, 02 Apr 2020 20:47:07 GMT
 
-22:57:41.593 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:41.599 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:31043 : 1
-22:57:41.687 [Forwarding get on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/url'
-22:57:41.687 [Forwarding get on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/url'
-22:57:42.256 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:08.524 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:09.430 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:10.531 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:11.632 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:12.730 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:13.832 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:14.930 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:16.030 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:17.131 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:18.231 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:19.331 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:20.430 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:21.532 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:22.632 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:23.732 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:24.831 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:25.932 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:27.030 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:28.130 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:29.231 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
+23:47:29.802 [Forwarding get on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/url'
+23:47:29.803 [Forwarding get on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/url'
+23:47:30.237 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/url HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/url HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 186
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -563,19 +549,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:41 GMT
+date: Thu, 02 Apr 2020 20:47:29 GMT
 
-22:57:42.256 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.262 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.262 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.300 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.238 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.241 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.242 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.260 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 62
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -583,19 +569,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.300 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.305 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/72bc4bf8-7439-460c-8b86-03538a4097b0/click'
-22:57:42.305 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/72bc4bf8-7439-460c-8b86-03538a4097b0/click'
-22:57:42.550 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.260 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.263 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04b5caa5-c461-44d7-833a-95d94af0d8a3/click'
+23:47:30.263 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04b5caa5-c461-44d7-833a-95d94af0d8a3/click'
+23:47:30.498 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/72bc4bf8-7439-460c-8b86-03538a4097b0/click HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/04b5caa5-c461-44d7-833a-95d94af0d8a3/click HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 50
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -603,19 +589,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.551 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.553 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.553 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.562 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.500 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.504 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.504 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.515 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 62
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -623,19 +609,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.563 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.572 [Forwarding getElementAttribute on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync'
-22:57:42.573 [Forwarding getElementAttribute on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync'
-22:57:42.602 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.516 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.524 [Forwarding getElementAttribute on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync'
+23:47:30.524 [Forwarding getElementAttribute on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync'
+23:47:30.542 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 39635
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -643,19 +629,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 12
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.602 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.604 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.604 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.612 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.542 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.544 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.544 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.552 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 62
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -663,19 +649,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.612 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.615 [Forwarding clearElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/72bc4bf8-7439-460c-8b86-03538a4097b0/clear'
-22:57:42.615 [Forwarding clearElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/72bc4bf8-7439-460c-8b86-03538a4097b0/clear'
-22:57:42.623 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.552 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.553 [Forwarding clearElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04b5caa5-c461-44d7-833a-95d94af0d8a3/clear'
+23:47:30.553 [Forwarding clearElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04b5caa5-c461-44d7-833a-95d94af0d8a3/clear'
+23:47:30.558 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/72bc4bf8-7439-460c-8b86-03538a4097b0/clear HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/04b5caa5-c461-44d7-833a-95d94af0d8a3/clear HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 50
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -683,19 +669,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.624 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.629 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.630 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.635 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.559 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.561 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.561 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.567 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 62
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -703,19 +689,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.635 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.639 [Forwarding sendKeysToElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/72bc4bf8-7439-460c-8b86-03538a4097b0/value'
-22:57:42.639 [Forwarding sendKeysToElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/72bc4bf8-7439-460c-8b86-03538a4097b0/value'
-22:57:42.670 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.568 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.570 [Forwarding sendKeysToElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04b5caa5-c461-44d7-833a-95d94af0d8a3/value'
+23:47:30.570 [Forwarding sendKeysToElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/04b5caa5-c461-44d7-833a-95d94af0d8a3/value'
+23:47:30.593 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/72bc4bf8-7439-460c-8b86-03538a4097b0/value HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/04b5caa5-c461-44d7-833a-95d94af0d8a3/value HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 161
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -723,19 +709,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.671 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.673 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.673 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.681 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.595 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.596 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.596 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.603 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 70
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -743,19 +729,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.681 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.683 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/4464d993-006e-407b-8c1e-278f58ba5ea4/click'
-22:57:42.683 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/4464d993-006e-407b-8c1e-278f58ba5ea4/click'
-22:57:42.911 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.603 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.605 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/9978218c-b7c4-4d5d-9f98-495f26c4e43e/click'
+23:47:30.605 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/9978218c-b7c4-4d5d-9f98-495f26c4e43e/click'
+23:47:30.826 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/4464d993-006e-407b-8c1e-278f58ba5ea4/click HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/9978218c-b7c4-4d5d-9f98-495f26c4e43e/click HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 50
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -763,19 +749,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.911 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.913 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.913 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.918 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.827 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.829 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.829 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.835 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 70
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -783,19 +769,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.918 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.923 [Forwarding getElementAttribute on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync'
-22:57:42.923 [Forwarding getElementAttribute on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync'
-22:57:42.938 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.836 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.841 [Forwarding getElementAttribute on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync'
+23:47:30.842 [Forwarding getElementAttribute on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync'
+23:47:30.858 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/execute/sync HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/execute/sync HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 39635
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -803,19 +789,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 12
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.939 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.940 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.941 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.947 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.858 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.860 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.860 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.868 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 70
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -823,19 +809,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.947 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.950 [Forwarding clearElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/4464d993-006e-407b-8c1e-278f58ba5ea4/clear'
-22:57:42.950 [Forwarding clearElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/4464d993-006e-407b-8c1e-278f58ba5ea4/clear'
-22:57:42.956 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.868 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.871 [Forwarding clearElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/9978218c-b7c4-4d5d-9f98-495f26c4e43e/clear'
+23:47:30.871 [Forwarding clearElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/9978218c-b7c4-4d5d-9f98-495f26c4e43e/clear'
+23:47:30.877 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/4464d993-006e-407b-8c1e-278f58ba5ea4/clear HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/9978218c-b7c4-4d5d-9f98-495f26c4e43e/clear HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 50
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -843,19 +829,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.956 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.959 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.960 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.965 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.877 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.880 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.881 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.885 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 70
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -863,19 +849,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.966 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.968 [Forwarding sendKeysToElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/4464d993-006e-407b-8c1e-278f58ba5ea4/value'
-22:57:42.968 [Forwarding sendKeysToElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/4464d993-006e-407b-8c1e-278f58ba5ea4/value'
-22:57:42.989 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.886 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.890 [Forwarding sendKeysToElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/9978218c-b7c4-4d5d-9f98-495f26c4e43e/value'
+23:47:30.890 [Forwarding sendKeysToElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/9978218c-b7c4-4d5d-9f98-495f26c4e43e/value'
+23:47:30.911 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/4464d993-006e-407b-8c1e-278f58ba5ea4/value HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/9978218c-b7c4-4d5d-9f98-495f26c4e43e/value HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 161
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -883,19 +869,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:42.989 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:42.992 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:42.993 [Forwarding findElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element'
-22:57:43.004 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.912 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.915 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.915 [Forwarding findElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element'
+23:47:30.919 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 50
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -903,19 +889,19 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 88
-date: Thu, 02 Apr 2020 19:57:42 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:43.005 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:43.011 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]' for 'POST' to 'http://localhost:31043/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/a1720ebf-f160-4417-a2bd-18a59ffb9dac/click'
-22:57:43.011 [Forwarding clickElement on session 2a30263d-594a-49b0-bf1e-299f27c3ea83 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043] for POST '/session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/a1720ebf-f160-4417-a2bd-18a59ffb9dac/click'
-22:57:43.388 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+23:47:30.920 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:30.921 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]' for 'POST' to 'http://localhost:17962/session/de56f662-3862-425b-9a00-96b41c9dead6/element/a2314fd3-f68b-4b2b-bd23-bbc425e95ddf/click'
+23:47:30.921 [Forwarding clickElement on session de56f662-3862-425b-9a00-96b41c9dead6 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962] for POST '/session/de56f662-3862-425b-9a00-96b41c9dead6/element/a2314fd3-f68b-4b2b-bd23-bbc425e95ddf/click'
+23:47:31.210 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
 
 Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/2a30263d-594a-49b0-bf1e-299f27c3ea83/element/a1720ebf-f160-4417-a2bd-18a59ffb9dac/click HTTP/1.1
+POST /session/de56f662-3862-425b-9a00-96b41c9dead6/element/a2314fd3-f68b-4b2b-bd23-bbc425e95ddf/click HTTP/1.1
 User-Agent: selenium/4.0.0-alpha-4 (java windows)
 Content-Length: 50
 Content-Type: application/json; charset=utf-8
-host: localhost:31043
+host: localhost:17962
 accept: */*
 
 Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
@@ -923,790 +909,26 @@ HTTP/1.1 200 OK
 content-type: application/json; charset=utf-8
 cache-control: no-cache
 content-length: 14
-date: Thu, 02 Apr 2020 19:57:43 GMT
+date: Thu, 02 Apr 2020 20:47:30 GMT
 
-22:57:43.388 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:31043 for channel [id: 0x36428f48, L:/127.0.0.1:63766 - R:localhost/127.0.0.1:31043]
-22:57:43.799 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:31043 : 1
-22:57:44.183 [Test worker] INFO org.subethamail.smtp.server.SMTPServer - SMTP server *:25 stopping
-22:57:44.183 [Test worker] DEBUG org.subethamail.smtp.server.ServerThread - SMTP Server socket shut down
-22:57:44.183 [org.subethamail.smtp.server.ServerThread *:25] INFO org.subethamail.smtp.server.ServerThread - SMTP server *:25 stopped
+23:47:31.211 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:17962 for channel [id: 0x0c445a4e, L:/127.0.0.1:50002 - R:localhost/127.0.0.1:17962]
+23:47:31.431 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:17962 : 1
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J bindings.
 SLF4J: Found binding in [jar:file:/C:/Users/xxprokod/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: Found binding in [jar:file:/C:/Users/xxprokod/.gradle/caches/modules-2/files-2.1/com.cisco.oss.foundation/logging-log4j/1.0.2-1/6a30195bf21e825693673fd5373a8ab4a48fc251/logging-log4j-1.0.2-1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:606)
-	at org.apache.commons.net.SocketClient._connect(SocketClient.java:243)
-	at org.apache.commons.net.SocketClient.connect(SocketClient.java:202)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.initTelnetSession(JamesHelper.java:63)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:43)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.readUntil(JamesHelper.java:92)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.initTelnetSession(JamesHelper.java:73)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:43)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.write(JamesHelper.java:111)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.initTelnetSession(JamesHelper.java:74)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:43)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.readUntil(JamesHelper.java:92)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.initTelnetSession(JamesHelper.java:75)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:43)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.write(JamesHelper.java:111)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.initTelnetSession(JamesHelper.java:76)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:43)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.readUntil(JamesHelper.java:92)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.initTelnetSession(JamesHelper.java:79)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:43)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.write(JamesHelper.java:111)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.initTelnetSession(JamesHelper.java:80)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:43)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.readUntil(JamesHelper.java:92)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.initTelnetSession(JamesHelper.java:81)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:43)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.write(JamesHelper.java:111)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.initTelnetSession(JamesHelper.java:82)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:43)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.readUntil(JamesHelper.java:92)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.initTelnetSession(JamesHelper.java:85)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:43)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.write(JamesHelper.java:111)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:44)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.readUntil(JamesHelper.java:92)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:45)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-java.lang.NullPointerException
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.write(JamesHelper.java:111)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.closeTelnetSession(JamesHelper.java:120)
-	at ru.stqa.pft.mantis.appmanager.JamesHelper.createUser(JamesHelper.java:46)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-1585857453484	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\xxprokod\\AppData\\Local\\Temp\\rust_mozprofileC2Crbk"
-1585857454445	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1585857454840	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1585857454840	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1585857454841	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1585857454841	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1585860421296	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\xxprokod\\AppData\\Local\\Temp\\rust_mozprofileY5cE94"
+1585860422014	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1585860422455	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1585860422456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1585860422456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1585860422456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1585857457324	Marionette	INFO	Listening on port 63767
-1585857457821	Marionette	WARN	TLS certificate errors will be ignored for this session
-Apr 02, 2020 10:57:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1585860425064	Marionette	INFO	Listening on port 50003
+1585860425138	Marionette	WARN	TLS certificate errors will be ignored for this session
+Apr 02, 2020 11:47:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
 log4j:WARN Please initialize the log4j system properly.

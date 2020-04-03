@@ -1,9 +1,13 @@
 package ru.stqa.pft.mantis.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-  public class UserData {
+@Entity
+@Table(name = "mantis_user_table")
+public class UserData {
 
     @Id
     @Column(name = "id")

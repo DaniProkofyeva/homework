@@ -8,28 +8,18 @@ public class ChangePasswordHelper extends HelperBase {
     super(app);
   }
 
-
-
-  public void login() {
-    wd.get(app.getProperty("web.baseUrl") + "login_page.php");
-    type(By.name("username"), app.getProperty("web.adminLogin"));
-    type(By.name("password"), app.getProperty("web.adminPassword"));
-    click(By.cssSelector("input[value='Login']"));
+  public void selectUserByName(String name) {
+    wd.findElement(By.linkText(name)).click();
   }
 
-  public void manageUsers() {
-    click(By.cssSelector("a[href*='manage_user_page']"));
+  public void resetPassword() {
+    wd.findElement(By.cssSelector("input[value='Reset Password']")).click();
   }
 
-  public void initPasswordReset(int idToDelete) {
-    click(By.cssSelector("[href$='user_id=" + idToDelete + "']"));
-    click(By.cssSelector("input[value='Reset Password']"));
-  }
-
-  public void changePassword(String confirmationLink, String newPassword) {
+  public void changePassword(String confirmationLink, String password) {
     wd.get(confirmationLink);
-    type(By.name("password"), newPassword);
-    type(By.name("password_confirm"), newPassword);
+    type(By.name("password"), password);
+    type(By.name("password_confirm"), password);
     click(By.cssSelector("input[value='Update User']"));
   }
 }

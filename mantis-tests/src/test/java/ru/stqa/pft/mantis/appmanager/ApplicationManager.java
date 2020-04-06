@@ -16,7 +16,6 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
   private final Properties properties;
   private WebDriver wd;
-
   private String browser;
   private RegistrationHelper registrationHelper;
   private FtpHelper ftp;
@@ -25,6 +24,7 @@ public class ApplicationManager {
   private NavigationHelper navigationHelper;
   private DbHelper dbHelper;
   private ChangePasswordHelper admin;
+  private SoapHelper soapHelper;
 
   public ApplicationManager(String browser)  {
     this.browser = browser;
@@ -114,5 +114,11 @@ public class ApplicationManager {
       admin = new ChangePasswordHelper(this);
     }
     return admin;
+  }
+  public SoapHelper soap() {
+    if (soapHelper == null) {
+      soapHelper = new SoapHelper(this);
+    }
+    return soapHelper;
   }
 }

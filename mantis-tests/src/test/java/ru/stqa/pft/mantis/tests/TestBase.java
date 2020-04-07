@@ -33,11 +33,12 @@ public class TestBase {
     app.ftp().restore("config/config_inc.php.bak", "config/config_inc.php");
     app.stop();
   }
-  public boolean isIssueOpen(int issueId) throws MalformedURLException, ServiceException, RemoteException {
+  boolean isIssueOpen(int issueId) throws MalformedURLException, ServiceException, RemoteException {
+    String login = app.getProperty("web.adminLogin");
+    String password = app.getProperty("web.adminPassword");
     MantisConnectPortType mc = app.soap().getMantisConnect();
-    IssueData issueData = mc.mc_issue_get(app.getProperty("soap.adminLogin"), app.getProperty("soap.adminPassword"), BigInteger.valueOf(issueId));
-    String issueStatus = issueData.getStatus().getName();
-    if (issueStatus.equals("closed") || (issueStatus.equals("resolved"))) {
+    IssueData issueIdTest = mc.mc_issue_get(login, password, BigInteger.valueOf(issueId));
+    if (issueIdTest.getResolution().getName().equals("fixed")) {
       return false;
     } else {
       return true;

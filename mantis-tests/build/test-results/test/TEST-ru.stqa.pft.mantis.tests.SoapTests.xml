@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.mantis.tests.SoapTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-06T17:50:48" hostname="WL357543" time="1.061">
+<testsuite name="ru.stqa.pft.mantis.tests.SoapTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-04-07T13:46:59" hostname="WL357543" time="1.436">
   <properties/>
-  <testcase name="testCreateIssue" classname="ru.stqa.pft.mantis.tests.SoapTests" time="1.061"/>
+  <testcase name="testCreateIssue" classname="ru.stqa.pft.mantis.tests.SoapTests" time="1.295"/>
+  <testcase name="testGetProjects" classname="ru.stqa.pft.mantis.tests.SoapTests" time="0.136"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.apache.axis.i18n.ProjectResourceBundle).
 log4j:WARN Please initialize the log4j system properly.

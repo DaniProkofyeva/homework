@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stga.pft.rest.tests.RestTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-08T15:59:18" hostname="WL357543" time="3.701">
+  <properties/>
+  <testcase name="testCreateIssue" classname="ru.stga.pft.rest.tests.RestTests" time="3.701"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

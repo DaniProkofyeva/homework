@@ -17,10 +17,10 @@ public class PointTests {
 
   }
 
-
+  /*
   @Test
-  /* Проверка расстояния между точками с некорректным ожидаемым результатом*/
-
+  // Проверка расстояния между точками с некорректным ожидаемым результатом*/
+  /*
   public void testDistance2()  {
 
     Point p1 = new Point(13, 4);
@@ -30,6 +30,9 @@ public class PointTests {
     Assert.assertEquals(p1.distance(p2), 17.278820596099706);
 
   }
+
+   */
+
 
   @Test
   /* Проверка расстояния между точками*/

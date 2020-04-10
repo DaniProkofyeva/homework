@@ -21,7 +21,7 @@ public class PointTests {
   @Test
   /* Проверка расстояния между точками с некорректным ожидаемым результатом*/
 
-  public void testDistance2() {
+  public void testDistance2()  {
 
     Point p1 = new Point(13, 4);
     Point p2 = new Point(-3, 7);
